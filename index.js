@@ -21,7 +21,7 @@ if (args.help) {
     while(l1 = line1.next()) {
         l2 = line2.next();
         i++;
-        //console.log(l1.toString());
+
         if (l1.toString() !== l2.toString()) {
             console.log(i+' l1: '+l1+' l2: '+l2);
         }
