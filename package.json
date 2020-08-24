@@ -1,11 +1,46 @@
 {
   "name": "filediffer",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
-  "bin": { "filediffer": "./index.js"},
+  "bin": {
+    "filediffer": "./index.js"
+  },
+  "description": "CLI for file diffing",
+  "repository": "Biboswan/FileDiffer",
+  "homepage": "https://github.com/Biboswan/FileDiffer",
+  "bugs": "https://github.com/Biboswan/FileDiffer/issues",
   "license": "MIT",
+  "keywords": [
+    "cli",
+    "file",
+    "difference",
+    "byline"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "author": {
+    "name": "Biboswan Roy",
+    "email": "biboswan98@gmail.com"
+  },
   "dependencies": {
     "minimist": "^1.2.5",
     "n-readlines": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,md}": [
+      "prettier --trailing-comma es5 --single-quote --write"
+    ]
   }
 }
