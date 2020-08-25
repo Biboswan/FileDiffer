@@ -6,9 +6,9 @@
     "filediffer": "./index.js"
   },
   "description": "CLI for file diffing",
-  "repository": "Biboswan/FileDiffer",
-  "homepage": "https://github.com/Biboswan/FileDiffer",
-  "bugs": "https://github.com/Biboswan/FileDiffer/issues",
+  "repository": "Biboswan/filediffer-cli",
+  "homepage": "https://github.com/Biboswan/filediffer-cli",
+  "bugs": "https://github.com/Biboswan/filediffer-cli/issues",
   "license": "MIT",
   "keywords": [
     "cli",
