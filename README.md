@@ -1,4 +1,4 @@
-![Build status](https://github.com/Biboswan/filediffer-cli/workflows/Build%20and%20Deploy/badge.svg)
+![Build status](https://github.com/Biboswan/filediffer-cli/workflows/DeployCI/badge.svg)
 
 
 ## filediffer-cli
