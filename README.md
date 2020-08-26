@@ -1,3 +1,6 @@
+![Build status](https://github.com/Biboswan/filediffer-cli/workflows/Build%20and%20Deploy/badge.svg)
+
+
 ## filediffer-cli
 
 A command line tool to compare files.
