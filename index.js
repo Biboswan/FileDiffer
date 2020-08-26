@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-'use strict';
-
 const path = require('path');
 const lineByLine = require('n-readlines');
 
@@ -36,19 +34,20 @@ if (args.help) {
         i++;
       }
 
-      while (l1) {
+      while ((l1 = line1.next())) {
         console.log(`${i}: file1: ${l1} | file2:`);
         l1 = line1.next();
         i++;
       }
-      while (l2) {
+
+      while ((l2 = line2.next())) {
+        console.log('46j');
         console.log(`${i}: file1:   | file2: ${l2}`);
         l2 = line2.next();
         i++;
       }
     } catch (err) {
       console.log(err.toString());
-      return;
     }
   }
 } else if (args.version) {

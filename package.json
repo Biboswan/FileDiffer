@@ -19,6 +19,9 @@
   "files": [
     "index.js"
   ],
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
   "author": {
     "name": "Biboswan Roy",
     "email": "biboswan98@gmail.com"
@@ -28,9 +31,12 @@
     "n-readlines": "^1.0.0"
   },
   "devDependencies": {
+    "concat-stream": "^2.0.0",
+    "cross-spawn": "^7.0.3",
     "eslint": "^7.7.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
+    "mocha": "^8.1.2",
     "prettier": "^2.1.0"
   },
   "husky": {
@@ -42,5 +48,8 @@
     "*.{js,md}": [
       "prettier --trailing-comma es5 --single-quote --write"
     ]
+  },
+  "engines": {
+    "node": ">=10.16.3"
   }
 }
